@@ -5,7 +5,7 @@
 
 @font-face {
     font-family:Roboto;
-    src: url(fonts/Roboto-Black.ttf);
+    src: url(fonts/Roboto-Light.ttf);
 }
 
 body {
@@ -217,7 +217,6 @@ nav {
 .contactsForm {
     display: flex;
     flex-direction: column;
-    font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -225,5 +224,48 @@ nav {
 }
 
 .contactsForm input {
-    margin-bottom: 30px;
+    margin-top: 50px;
+    font: caption;
+    font-family: Roboto;
+    font-weight: normal;
+    border: none;
+    background-color: inherit;
+    text-decoration: none;
+    outline: none;
 }
+
+.contactsForm input:hover{
+    background-color: inherit;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-bottom: red;
+}
+
+.contactsBackground {
+    display: flex;
+    justify-content: space-between;
+    left: 367px;
+    margin-top: 30px;
+    padding-left: 68px;
+    margin-right: 170px;
+    margin-left: 230px;
+    background: #EDEDED;
+    border-radius: 50px;
+}
+
+.contactsButton {
+    border: none;
+    background-color: #FF3C5A;
+    height: 40px;
+    width: 90px;
+    color: white;
+    margin-left: 170px;
+    margin-top: 50px;
+}
+
+input:focus {
+    border-bottom: 2px solid #FF3C5A;
+}
+
+/*transition 0.5 easy-in*/
