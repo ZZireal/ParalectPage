@@ -3,14 +3,21 @@
     src: url(fonts/SourceSansPro-Light.ttf);
 }
 
+@font-face {
+    font-family:Roboto;
+    src: url(fonts/Roboto-Black.ttf);
+}
+
 body {
     flex: display;
     flex-direction: row;
     padding-top: 30px;
     padding-bottom: 30px;
+    justify-content: space-between;
 }
 
 nav {
+    margin-left: 40px;
     height: 100%;
     position: fixed;
     background-color: #FFFFFF;
@@ -36,7 +43,7 @@ nav {
     flex-direction: column;
     padding: 0px;
     position: absolute;
-    width: 140.88px;
+    width: 200px;
     height: 134px;
     left: 96px;
     top: 377px;
@@ -45,7 +52,6 @@ nav {
 .navMenuItem a {
     display: flex;
     align-items: center;
-
     margin-bottom: 30px;
     display: flex;
     align-items: center;
@@ -87,12 +93,13 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     position: absolute;
-    width: 1053px;
-    height: 1146px;
     left: 367px;
     margin-top: 30px;
     margin-bottom: 30px;
-
+    padding-right: 78px;
+    padding-left: 68px;
+    margin-right: 170px;
+    margin-left: 230px;
     background: #EDEDED;
     border-radius: 50px;
 }
@@ -127,6 +134,7 @@ nav {
     line-height: 23px;
     display: flex;
     flex-direction: column;
+    margin-top: 200px;
 }
 
 .pinkColor {
@@ -152,9 +160,70 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: start;
-    
 }
 
 .row3GridLayout {
     display: grid;
+}
+
+.contentCourses {
+    margin-left: 45px;
+    margin-top: 75px;
+}
+
+.contentCourses h1 {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #333333;
+}
+
+.coursesRectangle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.coursesRectangle img, .coursesRectangle svg, .coursesRectangleName {
+    position: absolute;
+    color: black;
+}
+
+.coursesRectangleName {
+    margin-top: 135px;
+    margin-left: 20px;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.coursesRectangle svg {
+    fill: #B9B9B9;
+}
+
+.coursesRectangle:hover svg {
+    fill: #FF3C5A;
+}
+
+.coursesRectangles {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contactsForm {
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.contactsForm input {
+    margin-bottom: 30px;
 }
