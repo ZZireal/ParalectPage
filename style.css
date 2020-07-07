@@ -96,18 +96,17 @@ nav {
     left: 367px;
     margin-top: 30px;
     margin-bottom: 30px;
-    padding-right: 78px;
-    padding-left: 68px;
-    margin-right: 170px;
+    padding-right: 44px;
+    padding-bottom: 44px;
+    padding-left: 44px;
+    margin-right: 57px;
     margin-left: 230px;
     background: #EDEDED;
     border-radius: 50px;
 }
 
 .hello {
-    position: absolute;
     text-align: center;
-    left: 290px;
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: 900;
@@ -117,9 +116,6 @@ nav {
 
 .task {
     text-align: center;
-    left: 278px;
-    position: absolute;
-    padding-top: 79px;
     font-style: normal;
     font-weight: normal;
     line-height: 30px;
@@ -134,7 +130,6 @@ nav {
     line-height: 23px;
     display: flex;
     flex-direction: column;
-    margin-top: 200px;
 }
 
 .pinkColor {
@@ -144,7 +139,6 @@ nav {
 }
 
 .row {
-    margin-left: 100px;
     margin-bottom: 60px;
 }
 
@@ -164,6 +158,7 @@ nav {
 
 .row3GridLayout {
     display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
 }
 
 .contentCourses {
@@ -180,19 +175,7 @@ nav {
     color: #333333;
 }
 
-.coursesRectangle {
-    position: relative;
-    width: 200px;
-    height: 200px;
-}
-
-.coursesRectangle img, .coursesRectangle svg, .coursesRectangleName {
-    position: absolute;
-    color: black;
-}
-
 .coursesRectangleName {
-    margin-top: 135px;
     margin-left: 20px;
     font-family: Source Sans Pro;
     font-style: normal;
@@ -201,8 +184,23 @@ nav {
     line-height: 23px;
 }
 
+.coursesRectangle a {
+    text-decoration: none;
+    color: #333333;
+    margin: 2px;
+}
+
+.coursesRectangle {
+    background-color: white;
+    margin: 10px;
+}
+
 .coursesRectangle svg {
     fill: #B9B9B9;
+}
+
+.coursesRectangle:hover {
+    box-shadow: 0px 9px 18px rgba(0, 0, 0, 0.25);
 }
 
 .coursesRectangle:hover svg {
@@ -226,21 +224,15 @@ nav {
 .contactsForm input {
     margin-top: 50px;
     font: caption;
+    border: none;
+    border-bottom: 1px solid #B9B9B9;
     font-family: Roboto;
     font-weight: normal;
-    border: none;
     background-color: inherit;
     text-decoration: none;
     outline: none;
 }
 
-.contactsForm input:hover{
-    background-color: inherit;
-    text-decoration: none;
-    outline: none;
-    border: none;
-    border-bottom: red;
-}
 
 .contactsBackground {
     display: flex;
@@ -269,3 +261,25 @@ input:focus {
 }
 
 /*transition 0.5 easy-in*/
+
+.contactsForm textarea {
+    height: 70px;
+    resize: none;
+    margin-top: 50px;
+    font: caption;
+    font-family: Roboto;
+    font-weight: normal;
+    border: none;
+    background-color: inherit;
+    text-decoration: none;
+    outline: none;
+    border-bottom: 1px solid #B9B9B9;
+}
+
+.contactsForm textarea:focus {
+    border-bottom: 2px solid #FF3C5A;
+}
+
+.row1FloatRactangle {
+    float: left;
+}
