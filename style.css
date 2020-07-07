@@ -125,6 +125,8 @@ nav {
     font-weight: normal;
     font-size: 18px;
     line-height: 23px;
+    display: flex;
+    flex-direction: column;
 }
 
 .pinkColor {
@@ -140,4 +142,19 @@ nav {
 
 .rowName {
     margin-bottom: 15px;
+}
+
+.row1Float {
+    float: left;
+}
+
+.row2Flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    
+}
+
+.row3GridLayout {
+    display: grid;
 }
