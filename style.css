@@ -113,14 +113,15 @@ nav {
     font-weight: 900;
     font-size: 48px;
     line-height: 60px;
+    margin-bottom: 0;
 }
 
 .task {
     text-align: center;
     font-style: normal;
     font-weight: normal;
-    line-height: 30px;
     font-family: Source Sans Pro;
+    margin-top: 0;
 }
 
 .differentRows {
@@ -257,6 +258,7 @@ nav {
     color: white;
     margin-left: 170px;
     margin-top: 50px;
+    font-family: Roboto;
 }
 
 input:focus {
@@ -284,4 +286,8 @@ input:focus {
 
 .row1FloatRactangle {
     float: left;
+}
+
+.contactsForm button:focus {
+    outline: none;
 }
