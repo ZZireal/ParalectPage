@@ -76,10 +76,11 @@ nav {
     padding-right: 10px;
 }
 
-.navMenuItem:hover svg, .navMenuItem:hover a {
+.navMenuItem:hover svg, .navMenuItem:hover a, #activeMenuItem svg, #activeMenuItem a {
     color: #FF3C5A;
     stroke: #FF3C5A;
 }
+
 
 .content {
     height: 100%;
@@ -209,8 +210,9 @@ nav {
 }
 
 .coursesRectangles {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
 }
 
 .contactsForm {
@@ -259,9 +261,8 @@ nav {
 
 input:focus {
     border-bottom: 2px solid #FF3C5A;
+    transition: 1s ease-out;
 }
-
-/*transition 0.5 easy-in*/
 
 .contactsForm textarea {
     height: 70px;
@@ -278,7 +279,7 @@ input:focus {
 }
 
 .contactsForm textarea:focus {
-    border-bottom: 2px solid #FF3C5A;
+    border-bottom: 2px solid #FF3C5A;    
 }
 
 .row1FloatRactangle {
